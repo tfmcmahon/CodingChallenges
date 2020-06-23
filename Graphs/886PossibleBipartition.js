@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/possible-bipartition/
 //graph coloring
 
 let possibleBipartition = (N, dislikes) => {

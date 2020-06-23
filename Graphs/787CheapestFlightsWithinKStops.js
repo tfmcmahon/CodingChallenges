@@ -1,3 +1,6 @@
+//https://leetcode.com/problems/cheapest-flights-within-k-stops/
+//bellman-ford + DP
+
 const findCheapestPrice = (n, flights, src, dst, K) => {
   
   //initialize shortest path array, set the source node to 0
@@ -6,7 +9,7 @@ const findCheapestPrice = (n, flights, src, dst, K) => {
   
   //iterate through the flights K times
   for (let i = 0; i < K + 1; i++) {
-    //work on a copy of the path array to save space
+    //work on a copy of the path array to maintain previous values
     let clone = [].concat(price)
     
     for (let [u, v, w] of flights) {
