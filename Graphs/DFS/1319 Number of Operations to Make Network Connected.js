@@ -20,7 +20,7 @@ const makeConnected = (n, connections) => {
   }
   
   //initialize a visisted set and a total number of components,
-  //we will return total number of components - 1 since we want 1 total component
+  //we will return total number of disjointed components - 1 since we want 1 total component
   let visited = new Set()
   let components = 0
   
