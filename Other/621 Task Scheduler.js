@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/task-scheduler/
-//
+//interval division and spreading
 
 const leastInterval = (tasks, n) => {
     
