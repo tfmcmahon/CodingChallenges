@@ -38,5 +38,6 @@ const lengthOfLIS = nums => {
   }
   
   //return the length of the longest subsequence we've seen
+  //total time = O(n * log(n))
   return memo.length
 }
