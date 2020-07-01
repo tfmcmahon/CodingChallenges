@@ -18,10 +18,10 @@ const kthSmallest = (root, k) => {
     //iterate on the left side of the tree if we can
     if (node.left) {
       
-      //clone the left node, and set it to null
+      //clone the left node and set it to null
       let temp = node.left
       node.left = null
-      //back-track the node back onto the tree (since we set the left to null we won't infintely loop)
+      //back-track to the parent node and put it back onto the stack (since we set the left to null we won't infintely loop)
       stack.push(node)
       //push the stored node.left onto the stack
       stack.push(temp)
