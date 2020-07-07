@@ -15,14 +15,14 @@ const coinChange = (coins, amount) => {
   //loop through the memo (amount) array, time = O(n)
   for (let i = 1; i < memo.length; i++) {
     //loop through each coin, total time = O(m)
-    for (let j = 0; j < coins.length; j++) {
+    for (let coin of coins) {
       
       //if our coin is less than the current amount ...
-      if (coins[j] <= i) {
+      if (coin <= i) {
        
         //its value is equal to the minimum of its current value and the value at the amount - coin value, incremented by one ...
         //... which represents adding one more coin
-        memo[i] = Math.min(memo[i], memo[i - coins[j]] + 1)
+        memo[i] = Math.min(memo[i], memo[i - coin] + 1)
         
       }
     }
