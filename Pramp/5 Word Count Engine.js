@@ -38,18 +38,16 @@ const wordCountEngine = document => {
   sortedWords.sort(([aWord, aFreq, aOrder], [bWord, bFreq, bOrder]) => {
     
     //if the frequency of the words is the same, sort by index (order in which we saw them)
+    //we need to do this because stable sort will sometimes not return things in 'seen' order if they are the same.
     if (bFreq === aFreq) return aOrder - bOrder
     return bFreq - aFreq
   })
 
   let result = []
   
-  for (let i = 0; i < sortedWords.length; i++) {
+  for (let [sortedWord, sortedFreq, sortedIndex] of sortedWords) {
     
-    let wordFinal = sortedWords[i][0]
-    let numFinal = sortedWords[i][1].toString()
-    
-    result.push([wordFinal, numFinal])
+    result.push([sortedWord, sortedFreq.toString()])
     
   }
   
@@ -61,12 +59,13 @@ const wordCountEngine = document => {
 /*
 
 Name of peer: Sambo
-CS background: Grad student
+CS background: Master's degree
 
-What can I improve?: Minor syntax errors
+What can I improve?: Minor syntax errors. Misused // did not identify problems with default (stable) sort and identical items. Careful here.
 What did my peer think I can improve?: 
 
 What did I do well?: clean code.
-What did peer think I did well?: clean code, properly solved problem. Asked me to find a better option that ascii values to check if a char was a-z
+What did peer think I did well?: clean code, properly solved problem. Asked me to find a better option that ascii values to check if a char was a-z.
+// after thinking on it; regex?
 
 */
