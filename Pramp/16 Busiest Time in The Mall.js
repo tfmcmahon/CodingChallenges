@@ -37,12 +37,15 @@ const findBusiestPeriod = data => {
 /*
 
 Name of peer: Stanley
-CS background: 
+CS background: code camp grad and teacher
 
-What can I improve?: 
-What did my peer think I can improve?: 
+What can I improve?: off-by-one error
+What did my peer think I can improve?: be more confident when checking in with interviewer
 
-What did I do well?: 
-What did peer think I did well?: 
+What did I do well?: clean code, explained code well
+What did peer think I did well?: he was impressed that I stepped through the example carefully, which saved
+me from a headache down the road
+
+notes: got along well, connected outside of pramp
 
 */
