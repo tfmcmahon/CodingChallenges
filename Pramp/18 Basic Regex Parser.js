@@ -63,12 +63,12 @@ const isMatchHelper = (text, pattern, textIndex, patIndex) => {
 /*
 
 Name of peer: Gulnoza
-CS background: 
+CS background: 5 year SWE
 
-What can I improve?: 
+What can I improve?: Execute all edge cases in time
 What did my peer think I can improve?: 
 
-What did I do well?: 
+What did I do well?: Identified all edge cases
 What did peer think I did well?: 
 
 */
