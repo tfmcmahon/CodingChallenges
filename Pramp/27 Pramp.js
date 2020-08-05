@@ -1,8 +1,6 @@
-//3 step
-
 /*
 
-Name of peer: Andrew
+Name of peer: 
 CS background: 
 
 What can I improve?: 
