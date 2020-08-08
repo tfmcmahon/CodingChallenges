@@ -1,6 +1,6 @@
 /*
 
-Name of peer: 
+Name of peer: Tamas
 CS background: 
 
 What can I improve?: 
