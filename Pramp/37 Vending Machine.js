@@ -1,4 +1,5 @@
 //OOP project
+//custom classes
 
 //created a vending machine class which stocked beverages (another class)
 //it accepted money and dispensed change
@@ -24,7 +25,6 @@ class VendingMachine {
   }
 
   purchase(money, product) {
-    let carryProduct = this.drinks.has(product)
     let inStock = product.hasStock
 
     if (inStock && money > product.price) {
@@ -92,7 +92,7 @@ stock.add(Pepsi)
 
 const OurVendingMachine = new VendingMachine(stock)
 
-console.log(OurVendingMachine.purchase(888, Coke))
+console.log(OurVendingMachine.purchase(888, Pepsi))
 
 /*
 
