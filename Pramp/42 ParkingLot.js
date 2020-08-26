@@ -1,5 +1,8 @@
-/*
+//https://www.educative.io/courses/grokking-the-object-oriented-design-interview/gxM3gRxmr8Z
+//Object oriented programming
 
+/*
+notes:
 
 single level => no elevator
 large area of land ->
@@ -13,8 +16,6 @@ large area of land ->
 pay based on time spent
   -max price?
 */
-
-//https://www.educative.io/courses/grokking-the-object-oriented-design-interview/gxM3gRxmr8Z
 
 class ParkingLot {
   constructor() {}
