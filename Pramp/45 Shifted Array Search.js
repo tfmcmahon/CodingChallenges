@@ -2,15 +2,22 @@
 //searching and sorting
 
 function shiftedArrSearch(shiftArr, num) {
-  let shiftIndex = 0
+  const getShiftIndex = () => {
+    let start = 0
+    let end = shiftArr.length - 1
 
-  //o(n)
-  for (let i = 1; i < shiftArr.length; i++) {
-    if (shiftArr[i] < shiftArr[i - 1]) {
-      shiftIndex = i
-      break
+    while (start <= end) {
+      let mid = ~~((end + start) / 2)
+
+      if (mid === 0 || shiftArr[mid] < shiftArr[mid - 1]) return mid
+      else if (shiftArr[mid] > shiftArr[0]) start = mid + 1
+      else end = mid - 1
     }
+
+    return 0
   }
+
+  let shiftIndex = getShiftIndex()
 
   let endVal = shiftArr[shiftArr.length - 1] //last index
 
