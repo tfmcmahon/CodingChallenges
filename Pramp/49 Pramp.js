@@ -1,6 +1,30 @@
+//https://leetcode.com/problems/happy-number/
+//hashes and sets
+
+const isHappy = (n, seen = new Set()) => {
+  if (n === 1) return true
+
+  //if we sum to a number that is in the set, return false
+  if (seen.has(n)) return false
+
+  seen.add(n)
+
+  //otherwise square each digit and add them together
+  let nextSum = 0
+
+  while (n) {
+    let digit = n % 10
+    n = Math.floor(n / 10)
+    nextSum += Math.pow(digit, 2)
+  }
+
+  //recursively call the function
+  return isHappy(nextSum, seen)
+}
+
 /*
 
-Name of peer: 
+Name of peer: Eli
 CS background: 
 
 What can I improve?: 
